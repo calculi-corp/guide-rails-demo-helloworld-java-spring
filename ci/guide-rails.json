@@ -79,18 +79,7 @@
 					}
 				],
 				"post_deployment_actions": {
-					"instances": null,
-					"loadbalanced": false,
-					"loadbalancer": {
-						"TargetGroupName": "",
-						"TargetGroupPort": 0,
-						"TargetGroupProtocol": "",
-						"TargetType": "",
-						"VPCID": "",
-						"HealthCheckEnabled": false,
-						"HealthCheckPort": "",
-						"UnhealthyThresholdCount": 0
-					}
+					"loadbalancer": {}
 				},
 				"cache_info": {},
 				"tasks": [
@@ -100,7 +89,7 @@
 							{
 								"name": "build",
 								"definition": "build",
-								"command": "mvn compile\n",
+								"command": "mvn compile",
 								"properties": null
 							},
 							{
@@ -258,20 +247,15 @@
 					}
 				],
 				"post_deployment_actions": {
-					"instances": null,
-					"loadbalanced": false,
-					"loadbalancer": {
-						"TargetGroupName": "",
-						"TargetGroupPort": 0,
-						"TargetGroupProtocol": "",
-						"TargetType": "",
-						"VPCID": "",
-						"HealthCheckEnabled": false,
-						"HealthCheckPort": "",
-						"UnhealthyThresholdCount": 0
-					}
+					"loadbalancer": {}
 				},
-				"cache_info": {}
+				"cache_info": {},
+				"releases": [
+					{
+						"name": "consul",
+						"version": "latest"
+					}
+				]
 			},
 			{
 				"name": "Release",
@@ -429,19 +413,14 @@
 					}
 				],
 				"post_deployment_actions": {
-					"instances": null,
-					"loadbalanced": false,
-					"loadbalancer": {
-						"TargetGroupName": "",
-						"TargetGroupPort": 0,
-						"TargetGroupProtocol": "",
-						"TargetType": "",
-						"VPCID": "",
-						"HealthCheckEnabled": false,
-						"HealthCheckPort": "",
-						"UnhealthyThresholdCount": 0
+					"loadbalancer": {}
+				},
+				"releases": [
+					{
+						"name": "consul",
+						"version": "latest"
 					}
-				}
+				]
 			},
 			{
 				"name": "Production",
@@ -586,20 +565,15 @@
 					}
 				],
 				"post_deployment_actions": {
-					"instances": null,
-					"loadbalanced": false,
-					"loadbalancer": {
-						"TargetGroupName": "",
-						"TargetGroupPort": 0,
-						"TargetGroupProtocol": "",
-						"TargetType": "",
-						"VPCID": "",
-						"HealthCheckEnabled": false,
-						"HealthCheckPort": "",
-						"UnhealthyThresholdCount": 0
-					}
+					"loadbalancer": {}
 				},
-				"cache_info": {}
+				"cache_info": {},
+				"releases": [
+					{
+						"name": "consul",
+						"version": "latest"
+					}
+				]
 			}
 		],
 		"exit_actions": {
@@ -648,13 +622,7 @@
 			"init": {
 				"command": "bin/start-service.sh"
 			}
-		},
-		"releases": [
-			{
-				"name": "consul",
-				"version": "latest"
-			}
-		]
+		}
 	},
 	"organization": {
 		"orgname": "Tutorial"
