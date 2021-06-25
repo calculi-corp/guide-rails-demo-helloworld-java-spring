@@ -90,7 +90,7 @@
 							{
 								"name": "build",
 								"definition": "build",
-								"command": "mvn compile ",
+								"command": "mvn compile",
 								"properties": null
 							},
 							{
