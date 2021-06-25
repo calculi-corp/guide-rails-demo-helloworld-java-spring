@@ -75,7 +75,8 @@
 				"instance_tags": [
 					{
 						"name": "application.name",
-						"value": "((application.name))"
+						"value": "((application.name))",
+						"when": "0001-01-01T00:00:00Z"
 					}
 				],
 				"post_deployment_actions": {
@@ -89,7 +90,7 @@
 							{
 								"name": "build",
 								"definition": "build",
-								"command": "mvn compile",
+								"command": "mvn compile ",
 								"properties": null
 							},
 							{
@@ -178,7 +179,8 @@
 				"instance_tags": [
 					{
 						"name": "application.name",
-						"value": "((application.name))"
+						"value": "((application.name))",
+						"when": "0001-01-01T00:00:00Z"
 					}
 				],
 				"instance_groups": [
@@ -215,31 +217,38 @@
 								"properties": [
 									{
 										"name": "consul.servicename",
-										"value": "((consul.servicename))"
+										"value": "((consul.servicename))",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "consul.environment",
-										"value": "((consul.environment))"
+										"value": "((consul.environment))",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "consul.datacenter",
-										"value": "((consul.datacenter))"
+										"value": "((consul.datacenter))",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "consul.server",
-										"value": "false"
+										"value": "false",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "consul.joinservers",
-										"value": "((consul.joinservers))"
+										"value": "((consul.joinservers))",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "calculi.intermediate.cert",
-										"value": "grsecret:tls.cert"
+										"value": "grsecret:tls.cert",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "calculi.intermediate.key",
-										"value": "grsecret:tls.key"
+										"value": "grsecret:tls.key",
+										"when": "0001-01-01T00:00:00Z"
 									}
 								]
 							}
@@ -338,7 +347,8 @@
 				"instance_tags": [
 					{
 						"name": "application.name",
-						"value": "((application.name))"
+						"value": "((application.name))",
+						"when": "0001-01-01T00:00:00Z"
 					}
 				],
 				"instance_groups": [
@@ -381,31 +391,38 @@
 								"properties": [
 									{
 										"name": "consul.servicename",
-										"value": "((consul.servicename))"
+										"value": "((consul.servicename))",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "consul.environment",
-										"value": "((consul.environment))"
+										"value": "((consul.environment))",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "consul.datacenter",
-										"value": "((consul.datacenter))"
+										"value": "((consul.datacenter))",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "consul.server",
-										"value": "false"
+										"value": "false",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "consul.joinservers",
-										"value": "((consul.joinservers))"
+										"value": "((consul.joinservers))",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "calculi.intermediate.cert",
-										"value": "grsecret:tls.cert"
+										"value": "grsecret:tls.cert",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "calculi.intermediate.key",
-										"value": "grsecret:tls.key"
+										"value": "grsecret:tls.key",
+										"when": "0001-01-01T00:00:00Z"
 									}
 								]
 							}
@@ -490,7 +507,8 @@
 				"instance_tags": [
 					{
 						"name": "application.name",
-						"value": "((application.name))"
+						"value": "((application.name))",
+						"when": "0001-01-01T00:00:00Z"
 					}
 				],
 				"instance_groups": [
@@ -533,31 +551,38 @@
 								"properties": [
 									{
 										"name": "consul.servicename",
-										"value": "((consul.servicename))"
+										"value": "((consul.servicename))",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "consul.environment",
-										"value": "((consul.environment))"
+										"value": "((consul.environment))",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "consul.datacenter",
-										"value": "((consul.datacenter))"
+										"value": "((consul.datacenter))",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "consul.server",
-										"value": "false"
+										"value": "false",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "consul.joinservers",
-										"value": "((consul.joinservers))"
+										"value": "((consul.joinservers))",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "calculi.intermediate.cert",
-										"value": "grsecret:tls.cert"
+										"value": "grsecret:tls.cert",
+										"when": "0001-01-01T00:00:00Z"
 									},
 									{
 										"name": "calculi.intermediate.key",
-										"value": "grsecret:tls.key"
+										"value": "grsecret:tls.key",
+										"when": "0001-01-01T00:00:00Z"
 									}
 								]
 							}
@@ -599,11 +624,13 @@
 			{
 				"name": "jdk.version",
 				"value": "12",
+				"when": "0001-01-01T00:00:00Z",
 				"type": "string"
 			},
 			{
 				"name": "source_dirs",
 				"value": "./",
+				"when": "0001-01-01T00:00:00Z",
 				"type": "string"
 			}
 		],
